@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 25%;
+    }
+    
+    section {
+        padding: 3em;
+        height: 100vh;
+        position: relative;
+        box-sizing: border-box;
+        
+    }
+    
+    blockquote {
+        font-size: 2em;
+        width: 30%;
+        margin-top: 17%;
+        position: absolute;
+    }
+
+    a {
+        color: black;
+        text-decoration: none; /* no underline */
+        
+        :hover {
+            color: blue;
+        }
+    }
+}
+
+.titlebar {
+    width: 3.5em;
+    height: 40%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+
+    writing-mode: vertical-lr;
+
+    background-color: rgb(245, 245, 233);
+
+    border-radius: 0 20px 20px 0;
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            justify-content: right;
+            margin-bottom: 2.2em;
+            a {
+                font-size: 1.2rem;
+                margin-top: 1em;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+        }
+    }
+}
+
+.introduction, .conclusion {
+    background-color: bisque;
+}
+
+.conclusion {
+    z-index: 3;
+}
+
+.active_link {
+    color: burlywood;
+}
